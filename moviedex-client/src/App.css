@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.movies > * {
+  width: 45%;
+  margin: 10px 10px;
+}
+
+.title {
+  padding: 20px 0;
+  padding-left: 20px;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+}
+
+.new-movie {
+  margin: 0 30px;
+}
+
+.new-movie-form {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 200px minmax(30px, 250px);
+  gap: 20px;
+}
+.new-movie-form label {
+  display: inline-block;
+}
+
+.new-movie-form input {
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.new-movie-form .full-width {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
+.new-movie-form .error {
+  color: #aa0000;
+  background-color: rgba(250, 140, 140, 0.5);
+  padding: 5px 0;
+}
+
+.new-movie-form button[type="submit"] {
+  padding: 5px 10px;
+  cursor: pointer;
+  width: auto;
+  margin: auto;
+}

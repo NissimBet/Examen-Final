@@ -1,0 +1,16 @@
+.movie-container {
+  border: 1px solid #ccc;
+  padding: 30px 20px;
+}
+
+.movie-container > * {
+  padding: 5px 0;
+}
+
+.movie-rating {
+  font-size: 0.9em;
+}
+
+.movie-release {
+  font-weight: bold;
+}
