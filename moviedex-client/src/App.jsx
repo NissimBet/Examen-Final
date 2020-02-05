@@ -7,7 +7,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       peliculas: [],
-      error: true
+      error: false
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }

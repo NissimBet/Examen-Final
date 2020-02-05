@@ -10,11 +10,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  width: 100%;
 }
 
 .movies > * {
   width: 45%;
+  max-width: 400px;
   margin: 10px 10px;
+  flex: 2 0 auto;
 }
 
 .title {
@@ -23,15 +26,17 @@ body {
 }
 .main-container {
   display: flex;
-  align-items: center;
 }
 
 .new-movie {
+  flex: 1 0 auto;
   margin: 0 30px;
 }
 
 .new-movie-form {
   margin: 20px 0;
+  position: sticky;
+  top: 30px;
   display: grid;
   grid-template-columns: 200px minmax(30px, 250px);
   gap: 20px;
